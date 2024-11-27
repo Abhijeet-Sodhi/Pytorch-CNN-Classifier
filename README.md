@@ -42,8 +42,7 @@ To run the torchnn.py MNIST classifier project, you'll need to install the follo
 
 *pip install Pillow==10.2.0*  
 
-## Theory 🧮
-## What is a Neural Network?
+## What is a Neural Network? ❓
 A **neural network** is a machine learning model inspired by the structure of the human brain. It consists of interconnected layers:
 
 ![image](https://github.com/user-attachments/assets/23c578dc-c1d6-43b5-93b5-c9dc70c9f187)
@@ -54,7 +53,7 @@ A **neural network** is a machine learning model inspired by the structure of th
 
 **Output Layer:** Provides predictions, which in this project is the probability distribution over 10 classes (digits 0–9).
 
-**Key Concepts:**
+**Key Concepts:** 🔑
 
 **Neuron:** A node that holds a value.
 
@@ -64,7 +63,7 @@ A **neural network** is a machine learning model inspired by the structure of th
 
 The MNIST classifier uses **feedforward neural networks** where the output of one layer serves as the input for the next, following a forward propagation process.
 
-## Types of Neural Networks
+## Types of Neural Networks 📈
 **Feedforward Neural Networks:** Data flows in one direction, from input to output.
 
 **Convolutional Neural Networks (CNNs):** Specialized for image data; these include layers like convolution, pooling, and fully connected layers for feature extraction and classification.
@@ -73,8 +72,10 @@ The MNIST classifier uses **feedforward neural networks** where the output of on
 
 The project uses a **CNN** because of its efficiency in recognizing patterns in image data.
 
-## How CNNs Work in This Code
+## How CNNs Work in This Code 🔧
 Convolutional Neural Networks (CNNs) are designed to process image data by extracting features through several layers:
+
+![image](https://github.com/user-attachments/assets/f67a9b89-df4d-4fd4-b8c6-3ab4fa24e3d3)
 
 **Convolutional Layers:**
 These layers apply filters (small matrices) to the image, extracting features like edges, textures, and patterns. In ImageClassifier, the convolutional layers are defined as:
@@ -92,7 +93,7 @@ The *nn.AdaptiveAvgPool2d((1, 1))* layer dynamically reduces the dimensions of t
 **Flattening and Fully Connected Layer:**
 After pooling, the feature maps are flattened using *nn.Flatten()* and passed through a fully connected layer (*nn.Linear(64, 10)*), mapping the extracted features to 10 output classes corresponding to the digits (0–9).
 
-## the Data:
+## the Data: 📊
 **Data Augmentation**
 The training data is augmented using transformations like *RandomRotation* and *RandomHorizontalFlip*. These increase the diversity of the dataset by randomly altering images, making the model more robust to variations.
 
