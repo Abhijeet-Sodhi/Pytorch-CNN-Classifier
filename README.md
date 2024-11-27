@@ -46,6 +46,8 @@ To run the torchnn.py MNIST classifier project, you'll need to install the follo
 ## What is a Neural Network?
 A **neural network** is a machine learning model inspired by the structure of the human brain. It consists of interconnected layers:
 
+![image](https://github.com/user-attachments/assets/23c578dc-c1d6-43b5-93b5-c9dc70c9f187)
+
 **Input Layer:** Takes the raw data (in this case, the pixel values of MNIST images).
 
 **Hidden Layers:** Perform computations by using neurons that apply weights to their inputs, sum them up, add biases, and pass the result through an activation function.
@@ -69,7 +71,7 @@ The MNIST classifier uses **feedforward neural networks** where the output of on
 
 **Recurrent Neural Networks (RNNs):** Designed for sequence data with feedback loops for tasks like time-series prediction.
 
-The project uses a CNN because of its efficiency in recognizing patterns in image data.
+The project uses a **CNN** because of its efficiency in recognizing patterns in image data.
 
 ## How CNNs Work in This Code
 Convolutional Neural Networks (CNNs) are designed to process image data by extracting features through several layers:
