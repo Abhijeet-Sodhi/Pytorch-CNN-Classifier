@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/ef703717-7e6c-4e3e-81ee-e2a76d17e080
 
 **Testing** ✅
 
-https://github.com/user-attachments/assets/fa3886b0-40dd-4055-a232-d461972e35a7
+https://github.com/user-attachments/assets/4c4c36a7-9d46-4153-b7ee-4dd23ef57ca2
 
 ## The Code files: 📄
 **torchnn.py:** includes a convolutional neural network for MNIST digit classification with data augmentation, training, validation, model saving/loading, and inference capabilities using PyTorch.
