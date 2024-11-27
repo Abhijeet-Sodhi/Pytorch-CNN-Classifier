@@ -95,11 +95,11 @@ The *nn.AdaptiveAvgPool2d((1, 1))* layer dynamically reduces the dimensions of t
 After pooling, the feature maps are flattened using *nn.Flatten()* and passed through a fully connected layer (*nn.Linear(64, 10)*), mapping the extracted features to 10 output classes corresponding to the digits (0–9).
 
 ## the Data: 📊
-**Data Augmentation**
-The training data is augmented using transformations like *RandomRotation* and *RandomHorizontalFlip*. These increase the diversity of the dataset by randomly altering images, making the model more robust to variations.
+The training data is augmented using transformations like **RandomRotation** and **RandomHorizontalFlip**. These increase the diversity of the dataset by randomly altering images, making the model more robust to variations.
 
 **Validation Metrics**
 The code computes the following during training:
 
 **Loss:** Measures how far the model's predictions are from the true labels.
+
 **Accuracy:** Calculates the proportion of correctly predicted examples. These metrics are displayed for both training and validation datasets to monitor progress.
