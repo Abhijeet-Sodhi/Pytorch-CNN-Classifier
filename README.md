@@ -80,7 +80,9 @@ Convolutional Neural Networks (CNNs) are designed to process image data by extra
 These layers apply filters (small matrices) to the image, extracting features like edges, textures, and patterns. In ImageClassifier, the convolutional layers are defined as:
 
 *nn.Conv2d(1, 32, (3,3)):* Extracts 32 feature maps from the grayscale input image.
+
 *nn.Conv2d(32, 64, (3,3)):* Builds on the extracted features, producing 64 feature maps.
+
 *nn.Conv2d(64, 64, (3,3)):* Further deepens feature extraction with another set of 64 feature maps.
 
 **Activation Function:**
