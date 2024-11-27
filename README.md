@@ -2,8 +2,8 @@
 A CNN-based deep learning project for recognizing handwritten digits with data augmentation and validation metrics.
 
 ## Credits 🤖
-[![Building a Neural Network with PyTorch in 15 Minutes | Coding Challenge](https://img.youtube.com/vi/mozBidd58VQ&list=LL/0.jpg)](https://www.youtube.com/watch?v=mozBidd58VQ&list=LL) 
-Nicholas Renotte
+[![Building a Neural Network with PyTorch in 15 Minutes | Coding Challenge](https://img.youtube.com/vi/mozBidd58VQ&list=LL/0.jpg)](https://www.youtube.com/watch?v=mozBidd58VQ&list=LL) - 
+**Nicholas Renotte**
 The base code for this project was adapted from Nicholas Renotte. While the original concept and code were used as a foundation, several modifications were made to suit the specific functionality and features of this classifier.
 
 ## Demo 🎬
