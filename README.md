@@ -54,7 +54,7 @@ A **neural network** is a machine learning model inspired by the structure of th
 
 **Output Layer:** Provides predictions, which in this project is the probability distribution over 10 classes (digits 0–9).
 
-**Key Concepts:** 🔑
+**Key Concepts:** 
 
 **Neuron:** A node that holds a value.
 
