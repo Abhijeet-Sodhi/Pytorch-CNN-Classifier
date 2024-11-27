@@ -18,11 +18,12 @@ The base code for this project was adapted from Nicholas Renotte. While the orig
 
 **Model Definition:** A convolutional neural network (CNN) is defined using PyTorch's nn.Sequential. The architecture includes multiple convolutional layers, activation functions, and a final fully connected layer for classifying MNIST digits into 10 classes.
 
-**Training and Validation Workflow:**
-
 **Epoch Management:** The training loop iteratively adjusts model weights for 10 epochs.
+
 **Metrics:** Training loss and accuracy are computed in train_epoch, while validation metrics are computed in validate_epoch.
+
 **Best Model Saving:** The model with the lowest validation loss is saved as best_model.pt.
+
 **Inference:** The code allows users to make predictions on new images. The image is preprocessed, and the trained model predicts its class, enabling inference capabilities outside the training loop.
 
 **Command-Line Interface (CLI):** Users can choose between training the model **(--train)** or running inference on a specific image **(--infer <image_path>)** using CLI arguments.
