@@ -7,11 +7,11 @@ The torchnn.py project is based on a Convolutional Neural Network (CNN) that is 
 The base code for this project was adapted from Nicholas Renotte. While the original concept and code were used as a foundation, several modifications were made to suit the specific functionality and features of this classifier.
 
 ## Demo 🎬
-**Training**
+**Training** ✍🏻
 
 https://github.com/user-attachments/assets/ef703717-7e6c-4e3e-81ee-e2a76d17e080
 
-**Testing**
+**Testing** ✅
 
 https://github.com/user-attachments/assets/fa3886b0-40dd-4055-a232-d461972e35a7
 
