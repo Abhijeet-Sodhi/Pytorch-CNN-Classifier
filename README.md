@@ -1,5 +1,5 @@
 # Pytorch-CNN-Classifier 🌐
-A CNN-based deep learning project for recognizing handwritten digits with data augmentation and validation metrics.
+The torchnn.py project is based on a Convolutional Neural Network (CNN) that is designed to classify images from the MNIST dataset, which contains grayscale images of handwritten digits (0–9).
 
 ## Credits 🤖
 [![Building a Neural Network with PyTorch in 15 Minutes | Coding Challenge](https://img.youtube.com/vi/mozBidd58VQ&list=LL/0.jpg)](https://www.youtube.com/watch?v=mozBidd58VQ&list=LL) - 
@@ -43,5 +43,59 @@ To run the torchnn.py MNIST classifier project, you'll need to install the follo
 *pip install Pillow==10.2.0*  
 
 ## Theory 🧮
+## What is a Neural Network?
+A **neural network** is a machine learning model inspired by the structure of the human brain. It consists of interconnected layers:
 
-## the Whys:❓
+**Input Layer:** Takes the raw data (in this case, the pixel values of MNIST images).
+
+**Hidden Layers:** Perform computations by using neurons that apply weights to their inputs, sum them up, add biases, and pass the result through an activation function.
+
+**Output Layer:** Provides predictions, which in this project is the probability distribution over 10 classes (digits 0–9).
+
+**Key Concepts:**
+
+**Neuron:** A node that holds a value.
+
+**Activation:** A measure of a neuron’s output after applying weights, biases, and an activation function.
+
+**Activation Function:** Introduces non-linearity to help the network learn complex patterns. Common functions include ReLU, Sigmoid, and Softmax.
+
+The MNIST classifier uses **feedforward neural networks** where the output of one layer serves as the input for the next, following a forward propagation process.
+
+## Types of Neural Networks
+**Feedforward Neural Networks:** Data flows in one direction, from input to output.
+
+**Convolutional Neural Networks (CNNs):** Specialized for image data; these include layers like convolution, pooling, and fully connected layers for feature extraction and classification.
+
+**Recurrent Neural Networks (RNNs):** Designed for sequence data with feedback loops for tasks like time-series prediction.
+
+The project uses a CNN because of its efficiency in recognizing patterns in image data.
+
+## How CNNs Work in This Code
+Convolutional Neural Networks (CNNs) are designed to process image data by extracting features through several layers:
+
+**Convolutional Layers:**
+These layers apply filters (small matrices) to the image, extracting features like edges, textures, and patterns. In ImageClassifier, the convolutional layers are defined as:
+
+*nn.Conv2d(1, 32, (3,3)):* Extracts 32 feature maps from the grayscale input image.
+*nn.Conv2d(32, 64, (3,3)):* Builds on the extracted features, producing 64 feature maps.
+*nn.Conv2d(64, 64, (3,3)):* Further deepens feature extraction with another set of 64 feature maps.
+
+**Activation Function:**
+After each convolutional step, a non-linearity (typically ReLU: *nn.ReLU()*) is applied to help the network learn complex patterns and relationships within the data.
+
+**Adaptive Pooling:**
+The *nn.AdaptiveAvgPool2d((1, 1))* layer dynamically reduces the dimensions of the feature maps, retaining only the most critical information from each map while minimizing computational overhead.
+
+**Flattening and Fully Connected Layer:**
+After pooling, the feature maps are flattened using *nn.Flatten()* and passed through a fully connected layer (*nn.Linear(64, 10)*), mapping the extracted features to 10 output classes corresponding to the digits (0–9).
+
+## the Data:
+**Data Augmentation**
+The training data is augmented using transformations like *RandomRotation* and *RandomHorizontalFlip*. These increase the diversity of the dataset by randomly altering images, making the model more robust to variations.
+
+**Validation Metrics**
+The code computes the following during training:
+
+**Loss:** Measures how far the model's predictions are from the true labels.
+**Accuracy:** Calculates the proportion of correctly predicted examples. These metrics are displayed for both training and validation datasets to monitor progress.
